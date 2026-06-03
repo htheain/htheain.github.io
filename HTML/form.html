@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Student Registration</h1>
+    <form action="request.php" method="get">
+        <label for="name">Name</label>
+        <input type="text" name="stu_name" id="name">
+        <br><br>
+        <label for="email">Email</label>
+        <input type="email" name="stu_email" id="email">
+        <br><br>
+        <label for="phone">Phone</label>
+        <input type="number" name="stu_phone" id="phone">
+        <br><br>
+        <label for="password">Password</label>
+        <input type="password" name="stu_password" id="password">
+        <br><br>
+        <label for="dob">Date of birth</label>
+        <input type="date" name="stu_dob" id="dob">
+        <br><br>
+        <label for="passport">Passport</label>
+        <input type="file" accept=".pdf" name="stu_passport" id="passport">
+        <br><br>
+        <lebel for="year">Year</lebel>
+        <select name="stu_year" id="year">
+            <opition value="">choose your year</opition>
+            <opition value="1">First year</opition>
+            <opition value="2">Second year</opition>
+            <opition value="3">Third year</opition>
+        </select>
+        <br><br>
+        <lebel for="">Gender</lebel>
+        <br><br>
+        <input type="radio" name="gender" id="male" value="male"><lebel for="male">Male</lebel>
+        <input type="radio" name="gender" id="female" value="female"><lebel for="female">Female</lebel>
+         <input type="radio" name="gender" id="other" value="other"><lebel for="other">Other</lebel>
+         <br><br>
+         <lebel for="">Hobby</lebel>
+         <br><br>
+         <lebel for="address">Address</lebel>
+         <br><br>
+         
+         <input type="checkbox" name="gamming" id="gamming" value="gamming"><lebel form="gamming">Gamming</lebel>
+        <input type="checkbox" name="reading" id="reading" value="reading"><lebel form="reading">Reading</lebel>
+        <input type="checkbox" name="swimming" id="swimming" value="swimming"><lebel form="swimming">Swimming</lebel>
+         <br><br>
+         <lebel for="address">Address</lebel>
+         <textarea name="stu_address" id="address" cols="50" row="15"></textarea>
+         <br><br>
+         <input type="time" name="" id="">
+        <input type="range" min="0" max="100" name="" id="">
+        <input type="color" name="" id="">
+        <input type="text" name="" id="" required>
+        <input type="text" name="city1" id="" value="Mandalay">
+        <input type="text" name="city2" id="" value="Yangon" readonly>
+        <input type="text" name="plac" id="" placeholder="eg .097532217">
+        <br><br>
+
+        <button type="summit">Summit</button>
+    </form>
+</body>
+</html>
