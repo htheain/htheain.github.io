@@ -1,6 +1,8 @@
 /*Universal selector*/
 *{
     color: red;
+    margin: 0;
+    padding: 0;
 }
 
 /*tag selector?element selector */
@@ -56,3 +58,188 @@ a:target{
     text-transform:uppercase ;
     letter-spacing: 5px;
 }
+/* Border */
+.borderOne{
+    border: 2px double green;
+    /* soze two style color */
+}
+.borderTwo{
+    border-top: 5px solid red;
+    /* border-bottom:5px solid red */
+    /* border-left:5px solid red */
+    /* border-right:5px solid red */
+}
+.borderThree{
+    border-style:solid;
+    /* border-width: 10px; */
+    /* T/R/B/L */
+     /* border-width: 5px 10px 10px; */
+
+}
+/* border style */
+.borderFour{
+    /* border-style: solid */
+    /* border-style: dotted solid */
+    /* border-style: dotted */
+    border-style: dotted dashed solid double;
+    border-width: 5px;
+    border-color: green yellow red blue;
+}
+/* Margin */
+.marginOne{
+    border: 2px solid red;
+    /* margin:50px  */
+    margin-top:50px
+}
+/* padding */
+.paddingONe{
+    border:2px solid red;
+    /* padding:50px */
+    padding-left:50px
+}
+/* inline layout */
+.inline{
+    border: 2px solid red;
+    width: 300px;
+    display: inline-block
+}
+.block{
+    border:2px solid green;
+    width: 300px;
+    display: inline-block
+}
+/* float */
+.float_right_img{
+    width:50%;
+    float: right;
+}
+.clear{
+    clear:both;
+}
+.foat_left_img{
+    width:50%;
+    float: left;
+}
+/* Flex */
+.flex{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* justify-content:space-between; */
+    height: 100px;
+    background-color: greenyellow;
+}
+/* Grid */ 
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    /* grid-template-columns: auto auto auto; */
+    color:bisque;
+    grid-gap: 30px;
+}
+grid_child{
+    padding: 20px;
+    text-align: center;
+}
+
+.row_add{
+    grid-column-start: 2;
+    grid-row-start: 2;
+    grid-row-end: 4;
+
+}
+/* column */
+.column_add{
+grid-column-start: 2;
+grid-column-end: 4;
+}
+
+.media img{
+    width: 100%;
+}
+/* @media screen and (max-width: 1024px){
+    .media{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media screen and (max-width: 768px){
+    .media{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (max-width: 600px){
+    .media{
+        grid-template-columns: repeat(1, 1fr);
+    }
+} */
+ .media{
+    display: grid;
+    grid-template-columns: repeat(1,fr);
+    grid-gap: 20px;
+ }
+@media screen and (min-width: 600px){
+    .media{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (max-width: 768px){
+    .media{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media screen and (max-width: 1024px){
+    .media{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+/* position */
+.position_relative{
+    border: 2px solid red;
+    width: 1000px;
+    height: 500px;
+
+}
+.position_relative_child{
+    border: 2px solid green;
+    width: 500px;
+    height: 200px;
+    position: relative;
+    top: 50px;
+    left: 50px;
+}
+.position_absolute{
+    border: 2px solid rgb(8, 117, 103);
+    width: 1000px;
+    height:500px;
+    position: relative;
+}
+.position_absolute_child{
+    border: 2px solid yellow;
+    width:500px;
+    height: 200px;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+}                                                                                  
+.fixed{
+    position: fixed;
+    top: 50px;
+    right: 50px;
+}
+.online_font {
+    font-family: "Playwrite AU VIC Guides", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+/* offline font */
+ @font-face{
+    font-family: "dancing";
+    src: url("Dancing_Script/static/DancingScript-Medium.ttf");
+ }
+ .offline_font{
+    font-family: "dancing";
+ }
+ .icon{
+    width: 50px;
+    height: 30px;
+ }
