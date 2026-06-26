@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Looping</h1>
+    <script>
+        //For loop
+        //for(initialization; condition; increment/update)
+        //  // code
+        //}
+
+        for(let i=0; i<5; i++){
+            document.write("<h3> Hello World </h3>");
+        }
+        let laptopList = ['Hp', 'Dell', 'Asus', 'Acer', 'Lenovo'];
+        for(let i=0; i<laptopList.length; i++){
+            document.write("<h3> My laptop is: " + laptopList[i] + "</h3>");
+        }
+        // for(
+        // let i=0; i< 3;i++){
+        //     for(let k = 0; k<=i; k++){
+        //         document.write("*");
+        //     }
+        //     document.write("<br>");
+        // }
+        for (
+                let i = 5; i >= 1; i--) {
+                for (let k = 1; k <= i; k++) {
+                    document.write("*");
+                }
+                document.write("<br>");
+            } 
+
+            //while(condition){
+            //  //code
+            //  //update}
+            while(number < 100){
+                document.write(`Your Number is ${number} <br>`);
+                number+= 10;
+            }
+            
+            //do while loop
+            //do{}
+            //   //update
+
+            //}while(condition)
+
+            do{
+                document.write(`Your Number is Do While loop ${number} <br>`);
+                number+= 20;
+            }while(number < 100)
+            
+        
+    </script>
+</body>
+</html>
